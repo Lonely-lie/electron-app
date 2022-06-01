@@ -1,0 +1,57 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "this is test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron   .",
+    "build": "electron-builder --win --ia32",
+    "build-app": "pack.app.sh"
+  },
+  "build": {
+    "productName": "zm-app",
+    "appId": "zmzz",
+    "files": [
+      "main.js",
+      "init.js",
+      "preload.js",
+      "services",
+      "index.html",
+      "vue-build/**/*"
+    ],
+    "directories": {
+      "output": "build"
+    },
+    "extraResources": [
+      {
+        "from": "./resource/",
+        "to": "resource"
+      }
+    ],
+    "win": {
+      "artifactName": "${productName}_${version}.exe"
+    },
+    "asar": true,
+    "nsis": {
+      "oneClick": true,
+      "allowToChangeInstallationDirectory": false,
+      "deleteAppDataOnUninstall": true
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.1.0",
+    "electron-builder": "^23.0.3"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.6",
+    "ffi-napi": "^4.0.3",
+    "node-gyp-build": "^4.4.0",
+    "ref-array-di": "^1.2.2",
+    "ref-napi": "^3.0.3",
+    "ref-struct-di": "^1.1.1"
+  }
+}

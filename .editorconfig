@@ -1,0 +1,20 @@
+# editorconfig.org
+
+root = true
+
+# 设置缩进风格为tab，缩进宽度为4
+[*]
+charset = utf-8
+indent_size = 4
+indent_style = tab
+insert_final_newline = true
+trim_trailing_whitespace = true
+end_of_line = crlf
+
+# .json和.yml文件设置缩进风格为tab，缩进宽度为2
+[{*.json,*.yml}]
+indent_style = tab
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false

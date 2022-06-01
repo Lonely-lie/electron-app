@@ -1,0 +1,15 @@
+{
+	"sys": {
+		"dev": true,
+		"useLog": true,
+		"useTest": false
+	},
+	"face": {
+		"AppId":"Ddd5T1Wx7fKL76SmtBzD7n6HKLKqWNZmW57ieRMBHsJD",
+		"SDKKey":"51wvV7Azsu9a12PCyxKh953tkBHiDfY4bnwihnLfjEKd",
+		"rotate": 270,
+		"faceInitTime": 5,
+		"faceDllModal": "inline",
+		"faceVideo": "USB ColorCamera (0bda:0230)"
+	}
+}

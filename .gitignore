@@ -1,0 +1,14 @@
+.DS_Store
+dist/electron/*
+dist/*
+build/*
+vue-build/
+node_modules/
+**/node_modules/**
+dllLog/
+electronLog/
+npm-debug.log
+npm-debug.log.*
+thumbs.db
+shell
+crash

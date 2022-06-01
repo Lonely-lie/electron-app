@@ -1,0 +1,11 @@
+# /node_modules/* ignored by default
+# Ignore libs files
+.vscode
+node_modules
+!*.js
+!*.json
+package-lock.json
+package.json
+/.husky/*
+/dist/*
+/public/*
